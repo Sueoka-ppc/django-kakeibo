@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Payment, Income, PaymentCategory, IncomeCategory
+from .models import Payment, Income, PaymentCategory, IncomeCategory,KouzaType,PaymentType
 from import_export import resources
 from import_export.admin import ImportExportModelAdmin
 
@@ -49,8 +49,23 @@ class IncomeCategoryResource(resources.ModelResource):
 class IncomeCategoryAdmin(ImportExportModelAdmin):
     resource_class = IncomeCategoryResource
 
+class PaymentTypeResource(resources.ModelResource):
+    class Meta:
+        model = PaymentType
+
+class PaymentTypeAdmin(ImportExportModelAdmin):
+    resource_class = PaymentTypeResource
+
+class KouzaTypeResource(resources.ModelResource):
+    class Meta:
+        model = KouzaType
+
+class KouzaTypeAdmin(ImportExportModelAdmin):
+    resource_class = KouzaTypeResource
 
 admin.site.register(PaymentCategory, PaymentCategoryAdmin)
 admin.site.register(IncomeCategory, IncomeCategoryAdmin)
 admin.site.register(Payment, PaymentAdmin)
 admin.site.register(Income, IncomeAdmin)
+admin.site.register(PaymentType,PaymentTypeAdmin)
+admin.site.register(KouzaType,KouzaTypeAdmin)
