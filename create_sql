@@ -1,0 +1,84 @@
+CREATE TABLE IF NOT EXISTS public.monthly_kouza1_payment
+(
+    id serial,
+    date date NOT NULL,
+    price integer NOT NULL,
+    description text COLLATE pg_catalog."default",
+    category_id bigint NOT NULL,
+    paycategory_id bigint NOT NULL);
+
+CREATE TABLE IF NOT EXISTS public.monthly_kouza2_payment
+(
+    id serial,
+    date date NOT NULL,
+    price integer NOT NULL,
+    description text COLLATE pg_catalog."default",
+    category_id bigint NOT NULL,
+    paycategory_id bigint NOT NULL);
+
+CREATE TABLE IF NOT EXISTS public.monthly_kouza3_payment
+(
+    id serial,
+    date date NOT NULL,
+    price integer NOT NULL,
+    description text COLLATE pg_catalog."default",
+    category_id bigint NOT NULL,
+    paycategory_id bigint NOT NULL);
+
+CREATE TABLE IF NOT EXISTS public.monthly_kouza4_payment
+(
+    id serial,
+    date date NOT NULL,
+    price integer NOT NULL,
+    description text COLLATE pg_catalog."default",
+    category_id bigint NOT NULL,
+    paycategory_id bigint NOT NULL);
+
+CREATE TABLE IF NOT EXISTS public.monthly_kouza5_payment
+(
+    id serial,
+    date date NOT NULL,
+    price integer NOT NULL,
+    description text COLLATE pg_catalog."default",
+    category_id bigint NOT NULL,
+    paycategory_id bigint NOT NULL);
+
+CREATE TABLE IF NOT EXISTS public.monthly_kouza1_income
+(
+    id serial,
+    date date NOT NULL,
+    price integer NOT NULL,
+    description text COLLATE pg_catalog."default",
+    category_id bigint NOT NULL);
+
+CREATE TABLE IF NOT EXISTS public.monthly_kouza2_income
+(
+    id serial,
+    date date NOT NULL,
+    price integer NOT NULL,
+    description text COLLATE pg_catalog."default",
+    category_id bigint NOT NULL);
+
+CREATE TABLE IF NOT EXISTS public.monthly_kouza3_income
+(
+    id serial,
+    date date NOT NULL,
+    price integer NOT NULL,
+    description text COLLATE pg_catalog."default",
+    category_id bigint NOT NULL);
+
+CREATE TABLE IF NOT EXISTS public.monthly_kouza4_income
+(
+    id serial,
+    date date NOT NULL,
+    price integer NOT NULL,
+    description text COLLATE pg_catalog."default",
+    category_id bigint NOT NULL);
+
+CREATE TABLE IF NOT EXISTS public.monthly_kouza5_income
+(
+    id serial,
+    date date NOT NULL,
+    price integer NOT NULL,
+    description text COLLATE pg_catalog."default",
+    category_id bigint NOT NULL);

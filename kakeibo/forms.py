@@ -112,6 +112,7 @@ class IncomeCreateForm(forms.ModelForm):
     class Meta:
         model = Income
         fields = '__all__'
+        labels = '__all__'
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -119,7 +120,7 @@ class IncomeCreateForm(forms.ModelForm):
             field.widget.attrs['class'] = 'form'
             field.widget.attrs['placeholder'] = field.label
             field.widget.attrs['autocomplete'] = 'off'
-
+    
 
 class TransitionGraphSearchForm(forms.Form):
     """推移グラフの絞り込みフォーム"""
